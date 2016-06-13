@@ -1,0 +1,44 @@
+%svg-common {
+	background: url("../sprite/sprite.svg") no-repeat;
+}
+
+.svg-git {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-git-dims {
+	width: 50px;
+	height: 49.26px;
+}
+
+.svg-hello {
+	@extend %svg-common;
+	background-position: 32.89473684210526% 35.88345055260514%;
+}
+
+.svg-hello-dims {
+	width: 52px;
+	height: 51.66px;
+}
+
+.svg-skype {
+	@extend %svg-common;
+	background-position: 66.23376623376623% 72.34042553191489%;
+}
+
+.svg-skype-dims {
+	width: 50px;
+	height: 50px;
+}
+
+.svg-vk {
+	@extend %svg-common;
+	background-position: 100% 99.51551656409585%;
+}
+
+.svg-vk-dims {
+	width: 52px;
+	height: 38.26px;
+}
+
