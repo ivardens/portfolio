@@ -9,7 +9,6 @@ Getting started:
 4. npm install
 5. run "gulp" command to start
 
-```
 echo "# portfolio" >> README.md
 git init
 git add README.md 
