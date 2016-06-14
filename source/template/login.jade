@@ -15,15 +15,19 @@ html
                     .login__description  Личный сайт веб разработчика
                 
                 ul.login__icons__list
+                    li.login__icons__item
+                        a(href="https://vk.com/varden.adams" target="_blank" title="VK")
+                            svg.svg_icon
+                                use(xlink:href="./assets/sprite/sprite.svg#vk")
                     li.login__icons__item 
-                        svg.svg_icon
-                            use(xlink:href="./assets/sprite/sprite.svg#github")
+                        a(href="https://github.com/ivarden" target="_blank")
+                            svg.svg_icon
+                                use(xlink:href="./assets/sprite/sprite.svg#github")
                     li.login__icons__item
-                        svg.svg_icon
-                            use(xlink:href="./assets/sprite/sprite.svg#in")
-                    li.login__icons__item
-                        svg.svg_icon
-                            use(xlink:href="./assets/sprite/sprite.svg#vk")
+                        a(href="https://www.linkedin.com/in/ivarden" target="_blank")
+                            svg.svg_icon
+                                use(xlink:href="./assets/sprite/sprite.svg#in")
+
                 ul.login__menu__list
                     li.login__menu__item Мои работы
                     li.login__menu__item Обо мне

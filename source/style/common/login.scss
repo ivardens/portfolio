@@ -83,7 +83,7 @@ body {
         min-width: 100%;
     }
     &__icons__list {
-        min-width: 50%;
+        min-width: 45%;
     }
 
     &__icons__item,
@@ -93,15 +93,18 @@ body {
         cursor: pointer;
     }
     &__icons__item svg{
-        fill: coral !important;
-        width: 25px;
+        fill: rgba(8, 173, 154, .9);
+        width: 35px;
         height: 25px;
+    }
+    &__icons__item svg:hover {
+        fill: rgba(14, 145, 138, .9);
     }
     
     &__menu__item {
         padding: 14px;
         color: white;
-        background-color: rgba(8, 173, 154, .5);;
+        background-color: rgba(8, 173, 154, .5);
     }
     &__menu__item:nth-child(2) {
         border-color: rgba(115, 200, 193, 1);
@@ -109,16 +112,16 @@ body {
         border-width: 0 3px;
     }
     &__menu__item:hover {
-        background-color: rgba(14, 145, 138, .8);;
+        background-color: rgba(14, 145, 138, .8);
     }
     &__menu__item:active {
-        background-color: rgba(14, 145, 138, 1);;
+        background-color: rgba(14, 145, 138, 1);
     }
 
 }
-.svg_icon path g{
-    fill: coral !important;
-    }
+// .svg_icon path g{
+//     fill: coral !important;
+//     }
 
 .copyright {
     color: white;

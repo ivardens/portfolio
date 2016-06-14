@@ -10,6 +10,9 @@ module.exports = function() {
           message: error.message
         }
       }))
+      .pipe($.rsp.remove({
+        properties: [$.rsp.PROPS_FILL]
+      }))
       .pipe($.gulp.dest($.config.root + '/assets/sprite/'));
   })
 };
