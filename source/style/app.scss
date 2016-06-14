@@ -1,6 +1,9 @@
+$img: '../img/';
 body {
   margin: 0;
 }
 
+// @import './node_modules/normalize.css/normalize';
 @import 'common/greating';
-@import 'common/sprite'
+@import 'common/login';
+

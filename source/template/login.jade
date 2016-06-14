@@ -1,0 +1,32 @@
+doctype html
+html
+  include common/_head
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+    .wrap
+        .header
+        .section
+            .login 
+                .login__foto
+                    img(src="./assets/img/me2.jpg" alt="Foto of Varden Adamchuk" width="100%" height="100%")
+                .login__title Varden Adamchuk
+                    .login__description  Личный сайт веб разработчика
+                
+                ul.login__icons__list
+                    li.login__icons__item 
+                        svg.svg_icon
+                            use(xlink:href="./assets/sprite/sprite.svg#github")
+                    li.login__icons__item
+                        svg.svg_icon
+                            use(xlink:href="./assets/sprite/sprite.svg#in")
+                    li.login__icons__item
+                        svg.svg_icon
+                            use(xlink:href="./assets/sprite/sprite.svg#vk")
+                ul.login__menu__list
+                    li.login__menu__item Мои работы
+                    li.login__menu__item Обо мне
+                    li.login__menu__item Блог
+        .footer
+            .copyright &copy Varden Adamchuk | 2016
