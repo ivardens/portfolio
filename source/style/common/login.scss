@@ -4,13 +4,12 @@
     flex-direction: column;
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: $backBackLogin;
     // filter: blur(30px);
     color: #455a64;
     &__title {
         font-family: 'bernier_distressedregular';
         font-size: 2rem;
-        // font-size: 1.5rem;
         text-transform: uppercase;
         text-align: center;
         padding: 30px 0 30px 0;
@@ -21,7 +20,7 @@
     }
     &__menu__list {
         display: flex;
-        
+
         padding: 0;
         margin: 0;
     }
@@ -36,15 +35,15 @@
 
         &:nth-child(2),
         &:nth-child(3) {
-            border-color: rgba(115, 200, 193, 1);
+            border-color: $backBorderButton;
             border-style: solid;
             border-width: 0 0 0 3px;
         }
         &:hover {
-            background-color: rgba(14, 145, 138, .8);
+            background-color: $backHoverButton;
         }
         &:active {
-            background-color: rgba(14, 145, 138, 1);
+            background-color: $backActiveButton;
         }
         & button,
         & a {
@@ -56,7 +55,7 @@
             color: white;
             outline: none;
             border: 0;
-            background-color: rgba(8, 173, 154, .6);
+            background-color: $backLinkButton;
         }
     }
 }
@@ -66,32 +65,66 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    
     &__wrap-login {
         flex: 1 0 100%;
         display: flex;
         justify-content: center;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+        & input:focus{
+            color: rgba(8, 173, 154, 1);
+        }
         & input {
-            width: 80%;
+            width: 90%;
+            font-size: 1rem;
             padding: .8rem;
-            margin-bottom: 1.5rem;
+            padding-left: 60px;
             border: 0;
             border-radius: 5px;
             outline: none;
+        }
+        &::before {
+            font-family: 'FontAwesome';
+            position: absolute;
+            content: "\f007";
+            font-size: 1.4rem;
+            padding: 12px 14px 10px 13px;
+            border-radius:  5px 0 0 5px;
+            background-color: rgba(240, 239, 233, .6);
+            opacity: 0.8;
         }
     }
     &__wrap-password {
         flex: 1 0 100%;
         display: flex;
         justify-content: center;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
+        & input:focus{
+            color: rgba(8, 173, 154, 1);
+        }
         & input {
-            width: 80%;
+            width: 90%;
+            font-size: 1rem;
             padding: .8rem;
-            margin-bottom: 1.5rem;
+            padding-left: 60px;
             border: 0;
             border-radius: 5px;
             outline: none;
         }
+        &::before {
+            font-family: 'FontAwesome';
+            position: absolute;
+            content: "\f084";
+            font-size: 1.4rem;
+            padding: 12px 12px 10px 10px;
+            border-radius:  5px 0 0 5px;
+            background-color: rgba(240, 239, 233, .6);
+            opacity: 0.8;
+        } 
     }
     &__wrap-checkbox__1 {
         flex: 0 0 100%;

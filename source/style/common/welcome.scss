@@ -7,7 +7,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: $backBackLogin;
     &__foto {
         margin-top: 40px;
         width: 140px;
@@ -58,18 +58,18 @@
     &__menu__item {
         padding: 14px;
         color: white;
-        background-color: rgba(8, 173, 154, .5);
+        background-color: $backLinkButton;
         &:nth-child(2),
         &:nth-child(3) {
-            border-color: rgba(115, 200, 193, 1);
+            border-color: $backBorderButton;
             border-style: solid;
             border-width: 0 0 0 3px;
         }
         &:hover {
-            background-color: rgba(14, 145, 138, .8);
+            background-color: $backHoverButton;
         }
         &:active {
-            background-color: rgba(14, 145, 138, 1);
+            background-color: $backActiveButton;
         }
     }
 }
