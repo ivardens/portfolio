@@ -1,36 +1,58 @@
-doctype html
-html
-  include common/_head
-  body
-    <!--[if lt IE 7]>
-    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
-    <![endif]-->
-    .wrap
-        .header
-        .section
-            .login 
-                .login__foto
-                    img(src="./assets/img/me2.jpg" alt="Foto of Varden Adamchuk" width="100%" height="100%")
-                .login__title Varden Adamchuk
-                    .login__description  Личный сайт веб разработчика
-                
-                ul.login__icons__list
-                    li.login__icons__item
-                        a(href="https://vk.com/varden.adams" target="_blank" title="VK")
-                            svg.svg_icon
-                                use(xlink:href="./assets/sprite/sprite.svg#vk")
-                    li.login__icons__item 
-                        a(href="https://github.com/ivarden" target="_blank")
-                            svg.svg_icon
-                                use(xlink:href="./assets/sprite/sprite.svg#github")
-                    li.login__icons__item
-                        a(href="https://www.linkedin.com/in/ivarden" target="_blank")
-                            svg.svg_icon
-                                use(xlink:href="./assets/sprite/sprite.svg#in")
 
-                ul.login__menu__list
-                    li.login__menu__item Мои работы
-                    li.login__menu__item Обо мне
-                    li.login__menu__item Блог
-        .footer
-            .copyright &copy Varden Adamchuk | 2016
+extends common/_layout_welcome
+block title
+    title Login page.
+
+block content
+    .login
+        .login__wrap-title
+            .login__title - Авторизируйтесь - 
+
+        .login__wrap-form
+            form(action="" name="form-login" class="login-form")
+                .login-form__wrap-login
+                    input(type="text" name="login" placeholder="Login" class="login-input")
+                
+                .login-form__wrap-password
+                    input(type="password" name="password" placeholder="Password" class="login-input")
+                
+                .login-form__wrap-checkbox__1
+                    input(type="checkbox" name="men" id="cb-square-1" class="cb-square")
+                    label(for="cb-square-1" class="cb-square") Я человек
+
+                .login-form__wrap-question 
+                    | Вы точно не робот?
+                
+                .login-form__wrap-checkbox__2
+                    input(type='checkbox' name='yes' id="cb-circle-1" class="cb-circle") 
+                    label(for="cb-circle-1" class="cb-circle") Да
+
+                .login-form__wrap-checkbox__3
+                    input(type="checkbox" name="no" id="cb-circle-2" class="cb-circle") 
+                    label(for="cb-circle-2" class="cb-circle") Не уверен
+
+        ul.login__menu__list
+            li.login__menu__item 
+                a(href="welcome.html") На главную
+            li.login__menu__item 
+                button(type="button") Войти
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //- .popup
+        //-     ul.popup__list
+        //-         ul.popup__item menu 1
+        //-         ul.popup__item menu 2
+        //-         ul.popup__item menu 3

@@ -11,7 +11,7 @@ module.exports = function() {
         }
       }))
       .pipe($.rsp.remove({
-        properties: [$.rsp.PROPS_FILL]
+        properties: [$.rsp.PROPS_STROKE, $.rsp.PROPS_FILL, 'class']
       }))
       .pipe($.gulp.dest($.config.root + '/assets/sprite/'));
   })

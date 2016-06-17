@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'bernier_distressedregular';
+    src: url('../fonts/BERNIERDistressed-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'fontawesomeregular';
+    src: url('../fonts/FontAwesome.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
