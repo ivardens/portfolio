@@ -1,6 +1,10 @@
 $img: '../img/';
+$sprite: '../sprite/';
 $backBackLogin: rgba(255, 255, 255, 0.7);
 $backLinkButton: rgba(8, 173, 154, .6);
 $backHoverButton: rgba(14, 145, 138, .7);
 $backActiveButton: rgba(14, 145, 138, 1);
 $backBorderButton:rgba(115, 200, 193, 1);
+* a {
+    text-decoration: none;
+}

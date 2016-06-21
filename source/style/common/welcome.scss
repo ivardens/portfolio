@@ -22,13 +22,14 @@
     &__title {
         margin-top: -26px;
         font-size: 1.8rem;
-        line-height: 2.5rem;
+        line-height: 2.0rem;
         color: #455a64;
     }
     &__description {
         line-height: 1.3rem;
         font-size: 1rem;
         color: #455a64;
+        height: 20px;
     }
     &__icons__list,
     &__menu__list {

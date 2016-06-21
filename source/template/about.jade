@@ -1,0 +1,115 @@
+extends common/_layout_about.2
+
+block titleL
+    .title-h1
+        h1 - Обо мне -
+                    
+block fotoL
+    .about-foto
+        //- img(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
+block textL
+    .title-h2
+        h2 - Кто я -
+    .description
+        |Я веб разработчик из Ванкувера. Мне 43 года.
+        br
+        |Я занимаюсь разработкой современных сайтов и приложений. 
+        br
+        |Мне нравится делать интересные и современные проекты.
+        br
+        |Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+        br
+        |Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+        br
+
+block textR
+    .title-h2
+        h2 - Чем я могу быть -
+            br 
+            |вам полезен 
+    .description
+        |Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+
+block skillsR
+    h2 Frontend
+    h2 Becend
+    h3 Workflow
+
+block map
+    #map
+block contact
+    .popup-contact
+        .title-h2 
+            h2 - Контакты -
+        ul.popup-contact__list
+            li.popup-contact__items.skype varden-adams
+            li.popup-contact__items.mail varden.adams@gmail.com
+            li.popup-contact__items.phone +1 604 3602807
+            li.popup-contact__items.addres Burnaby, BC, Canada
+
+
+block footer-leftTop
+    .footer-nav
+        ul
+            li Мои работы
+            li Обо мне
+            li Блог
+            li Авторизация
+
+block footer-rightTop
+    .b-socialDown
+        ul.b-socialDown__list
+            li.b-socialDown__item
+                a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
+                    svg.b-socialDown__item_1
+                        use(xlink:href="./assets/sprite/sprite.svg#vk")
+            li.b-socialDown__item
+                a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
+                    svg.b-socialDown__item_2
+                        use(xlink:href="./assets/sprite/sprite.svg#github")
+            li.b-socialDown__item
+                a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
+                    svg.b-socialDown__item_3
+                        use(xlink:href="./assets/sprite/sprite.svg#in")
+block footer-leftBottom
+    | Этот проект я делал для презентации себя.
+
+block footer-rightBottom
+    .footer-copyright
+        .copyright &copy Varden Adamchuk | 2016
+
+
+
+
+
+//- block block3
+//-     .about-block3__wrap
+//-         .about-title 
+//-             h2 - Обо мне -
+//-         .about-foto
+//-             img(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk" width="100%" height="100%")
+//-         .about-description
+//-             h2 - Кто я -
+//-             |Я веб разработчик из Ванкувера. Мне 43 года.
+//-             br
+//-             |Я занимаюсь разработкой современных сайтов и приложений. 
+//-             br
+//-             |Мне нравится делать интересные и современные проекты.
+//-             br
+//-             |Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+//-             br
+//-             |Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+//-             br
+
+
+//- block block4
+//-     .about-block4__wrap
+//-         .about-title
+//-             h2 - Чем я могу быть -
+//-                 br 
+//-                 |вам полезен 
+//-         .about-description
+//-             |Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+
+//- block block5 
+//-     #map
