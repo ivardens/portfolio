@@ -260,6 +260,7 @@
     flex-wrap: wrap;
     width: 100%;
     min-height: 20vh;
+    background-color: rgba(60, 85, 87, .8);
     &__leftTop {
         flex: 1 0 50%;
         @media screen and (max-width: 780px){

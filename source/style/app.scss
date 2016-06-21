@@ -33,9 +33,9 @@ body {
 
 // @import './node_modules/normalize.css/normalize';
 // @import 'common/greating';
-// @import 'common/_layout_welcome';
-// @import 'common/welcome';
-// @import 'common/login';
+@import 'common/_layout_welcome';
+@import 'common/welcome';
+@import 'common/login';
 @import 'common/map';
 @import 'common/_layout_about.2';
 @import 'common/about';

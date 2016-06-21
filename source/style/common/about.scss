@@ -73,3 +73,23 @@
     color: rgba( 1, 189, 157, .8);
 }
 
+.footer-nav {
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        display: inline-block;
+        padding: 20px;
+        color: white;
+        font-size: 1rem;
+    }
+}
+
+.b-socialDown {
+    float: right;
+    &__item {
+        padding: 10px;
+    }
+}
