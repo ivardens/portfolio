@@ -41,28 +41,29 @@ body
                         polygon.traingle_1(points='0,0   0,86   500.8,86   500.8,75.5')
                         polygon.traingle_2(points='1000,0   1000,86   500,86   500,75.5')
 
-        main.l-main.clearfix#l-main
-            .l-main__left
-                .l-main__title
-                    block titleL
-                .l-main__foto
-                    .l-main__fotoWrap
-                        block fotoL
-                .l-main__text
-                    block textL
+        main.l-main#l-main
+            .clearfix
+                .l-main__left
+                    .l-main__title
+                        block titleL
+                    .l-main__foto
+                        .l-main__fotoWrap
+                            block fotoL
+                    .l-main__text
+                        block textL
 
-            .l-main__right
-                .l-main__text
-                    block textR
-                .l-main__skills
-                    .l-main__skillsWrap
-                        block skillsR
+                .l-main__right
+                    .l-main__text
+                        block textR
+                    .l-main__skills
+                        .l-main__skillsWrap
+                            block skillsR
             .l-main__bottom
                 .l-main__map
-                    .l-main__map1
-                        block map
                     .l-main__map2
                         block contact
+                    .l-main__map1
+                        block map
 
             
         footer.l-footer
