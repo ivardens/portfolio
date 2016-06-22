@@ -24,7 +24,7 @@ body
                     a.l-header__nav.l-header__nav_rotate(href="#main__block3" onclick="openNav()")
 
             .l-header__bottom.clearfix
-            
+
                 .l-header__fotoWrap
                     .b-foto
                         img.b-foto__size(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
@@ -36,7 +36,7 @@ body
                 .l-header__navDown.clearfix
                     a(href="#l-main")
                         .angle-down 
-                            
+
 
                 .l-header__traingle.clearfix
                     svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
@@ -45,29 +45,30 @@ body
 
         main.l-main#l-main
             .clearfix
-                .l-main__left
+                .l-main__title
+                    block title-top
+
+                .l-main__project
+                    .l-main__project-text
+                        block project-text
+                    .l-main__project-img
+                        block project-img
+                    .l-main__project-gallery
+                        block project-gallery
+
+                .l-main__about-me
                     .l-main__title
-                        block titleL
-                    .l-main__foto
-                        .l-main__fotoWrap
-                            block fotoL
-                    .l-main__text
-                        block textL
+                        block title-Bottom
 
-                .l-main__right
-                    .l-main__text
-                        block textR
-                    .l-main__skills
-                        .l-main__skillsWrap
-                            block skillsR
-            .l-main__bottom
-                .l-main__map
-                    .l-main__map2
+                    .l-main__review
+                        block review
+                    .l-main__contact
                         block contact
-                    .l-main__map1
-                        block map
 
-            
+                        a.to-top(href='#top') to top
+                            svg.up
+                                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='./assets/sprite/sprite.svg#arrow_down')
+
         footer.l-footer
             //- block footer-leftTop
             .l-footer__leftTop
@@ -104,7 +105,7 @@ body
                 //- block footer-rightBottom
                 .footer-copyright
                     .copyright &copy Varden Adamchuk | 2016
-                    
+
     #myNav.overlay
         a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
         .overlay-content

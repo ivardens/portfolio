@@ -1,19 +1,34 @@
-doctype html
-html
-  include common/_head
-  body
-    <!--[if lt IE 7]>
-    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
-    <![endif]-->
 
-    .greating
-      .greating_text Hello! I'm your training builder.
-      .greating_picture
-    
-    a(href="/")
-      span.ib.svg-git.svg-git-dims
-    a(href="/")
-      span.ib.svg-skype.svg-skype-dims
-    a(href="/")
-      span.ib.svg-vk.s.svg-vk-dims
-      
+extends common/_layout_welcome
+block title
+    title Welcome page.
+
+block content
+    .welcome
+        .welcome__foto
+            img(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk" width="100%" height="100%")
+        .welcome__title Varden Adamchuk
+        .welcome__description  Личный сайт веб разработчика
+        
+        ul.welcome__icons__list
+            li.welcome__icons__item
+                a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
+                    svg.svg_icon
+                        use(xlink:href="./assets/sprite/sprite.svg#vk")
+            li.welcome__icons__item 
+                a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
+                    svg.svg_icon
+                        use(xlink:href="./assets/sprite/sprite.svg#github")
+            li.welcome__icons__item
+                a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
+                    svg.svg_icon
+                        use(xlink:href="./assets/sprite/sprite.svg#in")
+        
+        ul.welcome__menu__list
+            a.welcome__menu__item(href="work.html")
+                li Мои работы
+            a.welcome__menu__item(href="about.html")
+                li Обо мне
+            a.welcome__menu__item(href="blog.html")
+                li Блог
+

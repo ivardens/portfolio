@@ -1,4 +1,5 @@
 include _head
+
 body
     .l-wrap
         header.l-header.clearfix
@@ -30,44 +31,28 @@ body
                         img.b-foto__size(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
 
                 .l-header__description
-                    .description__title Varden Adamchuk
-                    .description__text Личный сайт веб разработчика
+                    .blog.title-h1 - Блог -
+                    .blog.description__text Статьи, которые я написал
 
                 .l-header__navDown.clearfix
                     a(href="#l-main")
-                        .angle-down 
-                            
+                        .angle-down
 
                 .l-header__traingle.clearfix
                     svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
-                        polygon.traingle_1(points='0,0   0,86   500.8,86   500.8,75.5')
-                        polygon.traingle_2(points='1000,0   1000,86   500,86   500,75.5')
+                        polygon.blog.traingle_1(points='0,0   0,86   500.8,86   500.8,75.5')
+                        polygon.blog.traingle_2(points='1000,0   1000,86   500,86   500,75.5')
 
-        main.l-main#l-main
+        main.blog.l-main#l-main
             .clearfix
-                .l-main__left
-                    .l-main__title
-                        block titleL
-                    .l-main__foto
-                        .l-main__fotoWrap
-                            block fotoL
-                    .l-main__text
-                        block textL
+                .blog.l-main__left
+                    block main-left
+                        
 
-                .l-main__right
-                    .l-main__text
-                        block textR
-                    .l-main__skills
-                        .l-main__skillsWrap
-                            block skillsR
-            .l-main__bottom
-                .l-main__map
-                    .l-main__map2
-                        block contact
-                    .l-main__map1
-                        block map
+                .blog.l-main__right
+                    block main-right
 
-            
+
         footer.l-footer
             //- block footer-leftTop
             .l-footer__leftTop
@@ -104,7 +89,7 @@ body
                 //- block footer-rightBottom
                 .footer-copyright
                     .copyright &copy Varden Adamchuk | 2016
-                    
+
     #myNav.overlay
         a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
         .overlay-content

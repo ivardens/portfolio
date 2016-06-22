@@ -1,0 +1,62 @@
+extends common/_layout_work
+
+block title-top
+    .title-wrap
+        h2.title-title - Мои работы -
+        svg.title-background-work
+            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/sprite/sprite.svg#works_header')
+
+block project-text
+    | project-text
+block project-img
+    | project-img
+block project-gallery
+    | project-gallery
+
+block title-Bottom
+    .title-wrap
+        h2.title-title - Что обо мне -
+            br 
+            | говорят
+        svg.title-background-about
+            use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/sprite/sprite.svg#about_header')
+
+block review
+    .article-wrap.clearfix
+        article.article
+            .article__quote-left
+            .article__text
+                | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+            .article__person.clearfix
+                .article__person-foto
+                    img(src="assets/img/dima.jpg", alt="Ковальчук Дмитрий")
+                .article__person-name
+                    | Ковальчук Дмитрий
+                    .article__person-duty
+                        | основатель Loftschool
+        article.article
+            .article__quote-left
+            
+            .article__text
+                | Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+            
+            .article__person.clearfix
+            
+                .article__person-foto
+                    img(src="assets/img/zar.jpg", alt="Зар Захаров")
+                .article__person-name
+                    | Зар Захаров
+                    .article__person-duty
+                        | главный преподаватель
+
+block contact
+    .form-wrap
+        form#contactForm(action='#')
+            .form__title - связаться со мной -
+                input.form__input(type='text', placeholder='Имя')
+                input.form__input(type='email', placeholder='Email')
+                textarea.form__text(placeholder='Ваше сообщение')
+            .form__buttons
+                input.form__button(type='submit', value='Отправить')
+                input.form__button(type='reset', value='Очистить')
+            

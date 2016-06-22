@@ -1,4 +1,4 @@
-extends common/_layout_about.2
+extends common/_layout_about
 
 block titleL
     .title-h1
@@ -46,70 +46,3 @@ block contact
             li.popup-contact__items.addres Burnaby, BC, Canada
 block map
     #map
-
-
-block footer-leftTop
-    .footer-nav
-        ul.footer-nav__list
-            li.footer-nav__item Мои работы
-            li.footer-nav__item Обо мне
-            li.footer-nav__item Блог
-            li.footer-nav__item Авторизация
-
-block footer-rightTop
-    .b-socialDown
-        ul.b-socialDown__list
-            li.b-socialDown__item
-                a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
-                    svg.b-socialDown__item_1
-                        use(xlink:href="./assets/sprite/sprite.svg#vk_round")
-            li.b-socialDown__item
-                a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
-                    svg.b-socialDown__item_2
-                        use(xlink:href="./assets/sprite/sprite.svg#github_round")
-            li.b-socialDown__item
-                a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
-                    svg.b-socialDown__item_3
-                        use(xlink:href="./assets/sprite/sprite.svg#in_round")
-block footer-leftBottom
-    | Этот проект я делал для презентации себя.
-
-block footer-rightBottom
-    .footer-copyright
-        .copyright &copy Varden Adamchuk | 2016
-
-
-
-
-
-//- block block3
-//-     .about-block3__wrap
-//-         .about-title 
-//-             h2 - Обо мне -
-//-         .about-foto
-//-             img(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk" width="100%" height="100%")
-//-         .about-description
-//-             h2 - Кто я -
-//-             |Я веб разработчик из Ванкувера. Мне 43 года.
-//-             br
-//-             |Я занимаюсь разработкой современных сайтов и приложений. 
-//-             br
-//-             |Мне нравится делать интересные и современные проекты.
-//-             br
-//-             |Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
-//-             br
-//-             |Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
-//-             br
-
-
-//- block block4
-//-     .about-block4__wrap
-//-         .about-title
-//-             h2 - Чем я могу быть -
-//-                 br 
-//-                 |вам полезен 
-//-         .about-description
-//-             |Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
-
-//- block block5 
-//-     #map
