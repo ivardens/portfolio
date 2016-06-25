@@ -1,114 +1,112 @@
 include _head
-body
-    .l-wrap
-        header.l-header.clearfix
-            .l-header__leftTop
-                .l-header__leftTopWrap
-                    .b-socialTop 
-                        ul.b-socialTop__list
-                            li.b-socialTop__item
-                                a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
-                                    svg.b-socialTop__item_1
-                                        use(xlink:href="./assets/sprite/sprite.svg#vk")
-                            li.b-socialTop__item
-                                a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
-                                    svg.b-socialTop__item_2
-                                        use(xlink:href="./assets/sprite/sprite.svg#github")
-                            li.b-socialTop__item
-                                a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
-                                    svg.b-socialTop__item_3
-                                        use(xlink:href="./assets/sprite/sprite.svg#in")
+.wrap
+    header.header
+        .social-top
+            ul.social__list
+                li.social__item
+                    a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
+                        svg.social__svg
+                            use(xlink:href="./assets/sprite/sprite.svg#vk")
+                li.social__item
+                    a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
+                        svg.social__svg
+                            use(xlink:href="./assets/sprite/sprite.svg#github")
+                li.social__item
+                    a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
+                        svg.social__svg
+                            use(xlink:href="./assets/sprite/sprite.svg#in")
 
-            .l-header__rightTop
-                .l-header__rightTopWrap
-                    a.l-header__nav.l-header__nav_rotate(href="#main__block3" onclick="openNav()")
+        .nav-top
+            a.nav-btn.nav-btn__rotate(href="#" onclick="openNav()")
 
-            .l-header__bottom.clearfix
-            
-                .l-header__fotoWrap
-                    .b-foto
-                        img.b-foto__size(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
+        .wrap-top
+            .foto-circle
+                img.foto-circle__size(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
 
-                .l-header__description
-                    .description__title Varden Adamchuk
-                    .description__text Личный сайт веб разработчика
+            .description-top
+                .description__title Varden Adamchuk
+                .description__text Личный сайт веб разработчика
 
-                .l-header__navDown.clearfix
-                    a(href="#l-main")
-                        .angle-down 
+            .btn-down
+                a.link(href='#to')
+                    | my works
+                    svg.btn-down__svg
+                        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='./assets/sprite/sprite.svg#arrow_down')
+            .title-about__background
+                svg.title-about__svg
+                    use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/sprite/sprite.svg#about_header')
+
+        .decor-about
+            svg.traingle-svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+                polygon.traingle-svg__1(points='0,0   0,86   500.8,86   500.8,75.5')
+                polygon.traingle-svg__2(points='1000,0   1000,86   500,86   500,75.5')
+
+
+    main#to.main-about
+        //- .clearfix
+        .main-about__left
+            .main-about__title
+                block titleL
+            .main-about__foto
+                .main-about__fotoWrap
+                    block fotoL
+            .main-about__text
+                block textL
+
+        .main-about__right
+            .main-about__text
+                block textR
+            .main-about__skills
+                .main-about__skillsWrap
+                    block skillsR
+                    .svg-circle.nodenpm
+                        
+        
+        .main-about__bottom
+            .main-about__map
+                .main-about__map2
+                    block contact
+                .main-about__map1
+                    block map
+    
                             
+                    footer.footer-about
+                        .footer-about__leftTop
+                            .footer-nav
+                                ul.footer-nav__list
+                                    li.footer-nav__item 
+                                        a(href="works.html") Мои работы
+                                    li.footer-nav__item 
+                                        a(href="about.html") Обо мне
+                                    li.footer-nav__item 
+                                        a(href="blog.html") Блог
+                                    li.footer-nav__item 
+                                        a(href="login.html") Авторизация
+                        .footer-about__rightTop
+                            .socialDown
+                                ul.socialDown__list
+                                    li.socialDown__item
+                                        a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
+                                            svg.socialDown__item_1
+                                                use(xlink:href="./assets/sprite/sprite.svg#vk_round")
+                                    li.socialDown__item
+                                        a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
+                                            svg.b-socialDown__item_2
+                                                use(xlink:href="./assets/sprite/sprite.svg#github_round")
+                                    li.socialDown__item
+                                        a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
+                                            svg.socialDown__item_3
+                                                use(xlink:href="./assets/sprite/sprite.svg#in_round")
+                        .footer-about__leftBottom
+                            | Этот проект я делал для презентации себя.
+                        .footer-about__rightBottom
+                            .footer-copyright
+                                .copyright &copy Varden Adamchuk | 2016
 
-                .l-header__traingle.clearfix
-                    svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
-                        polygon.traingle_1(points='0,0   0,86   500.8,86   500.8,75.5')
-                        polygon.traingle_2(points='1000,0   1000,86   500,86   500,75.5')
-
-        main.l-main#l-main
-            .clearfix
-                .l-main__left
-                    .l-main__title
-                        block titleL
-                    .l-main__foto
-                        .l-main__fotoWrap
-                            block fotoL
-                    .l-main__text
-                        block textL
-
-                .l-main__right
-                    .l-main__text
-                        block textR
-                    .l-main__skills
-                        .l-main__skillsWrap
-                            block skillsR
-            .l-main__bottom
-                .l-main__map
-                    .l-main__map2
-                        block contact
-                    .l-main__map1
-                        block map
-
-            
-        footer.l-footer
-            //- block footer-leftTop
-            .l-footer__leftTop
-                .footer-nav
-                    ul.footer-nav__list
-                        li.footer-nav__item 
-                            a(href="works.html") Мои работы
-                        li.footer-nav__item 
-                            a(href="about.html") Обо мне
-                        li.footer-nav__item 
-                            a(href="blog.html") Блог
-                        li.footer-nav__item 
-                            a(href="login.html") Авторизация
-            .l-footer__rightTop
-                //- block footer-rightTop
-                .b-socialDown
-                    ul.b-socialDown__list
-                        li.b-socialDown__item
-                            a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
-                                svg.b-socialDown__item_1
-                                    use(xlink:href="./assets/sprite/sprite.svg#vk_round")
-                        li.b-socialDown__item
-                            a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
-                                svg.b-socialDown__item_2
-                                    use(xlink:href="./assets/sprite/sprite.svg#github_round")
-                        li.b-socialDown__item
-                            a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
-                                svg.b-socialDown__item_3
-                                    use(xlink:href="./assets/sprite/sprite.svg#in_round")
-            .l-footer__leftBottom
-                //- block footer-leftBottom
-                | Этот проект я делал для презентации себя.
-            .l-footer__rightBottom
-                //- block footer-rightBottom
-                .footer-copyright
-                    .copyright &copy Varden Adamchuk | 2016
-                    
-    #myNav.overlay
-        a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
-        .overlay-content
-            a(href='work.html') Мои работы
-            a(href='about.html') Обо мне
-            a(href='blog.html') Блог
-            a(href='index.html') Авторизация
+#myNav.overlay
+    a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+    .overlay-content
+        a(href='work.html') Мои работы
+        a(href='about.html') Обо мне
+        a(href='blog.html') Блог
+        a(href='index.html') Авторизация

@@ -1,115 +1,154 @@
 include _head
-body
-    .l-wrap
-        header.l-header.clearfix
-            .l-header__leftTop
-                .l-header__leftTopWrap
-                    .b-socialTop 
-                        ul.b-socialTop__list
-                            li.b-socialTop__item
+
+.wrap
+    header.header
+        .social-top
+            ul.social__list
+                li.social__item
+                    a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
+                        svg.social__svg
+                            use(xlink:href="./assets/sprite/sprite.svg#vk")
+                li.social__item
+                    a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
+                        svg.social__svg
+                            use(xlink:href="./assets/sprite/sprite.svg#github")
+                li.social__item
+                    a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
+                        svg.social__svg
+                            use(xlink:href="./assets/sprite/sprite.svg#in")
+
+        .nav-top
+            a.nav-btn.nav-btn__rotate(href="#" onclick="openNav()")
+
+        .wrap-top
+            .foto-circle
+                img.foto-circle__size(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
+
+            .description-top
+                .description__title Varden Adamchuk
+                .description__text Личный сайт веб разработчика
+
+            .btn-down
+                a.link(href='#to')
+                    | my works
+                    svg.btn-down__svg
+                        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='./assets/sprite/sprite.svg#arrow_down')
+
+        .decor
+            svg.traingle-svg(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+                polygon.traingle-svg__1(points='0,0   0,86   500.8,86   500.8,75.5')
+                polygon.traingle-svg__2(points='1000,0   1000,86   500,86   500,75.5')
+
+
+    main.main#to
+        .title-work
+            .title-work__h
+                h1.title-work__h1 - Мои работы -
+            
+            svg.title-work__background
+                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/sprite/sprite.svg#works_header')
+        
+        .slider-img
+            img.slider-img__big(src="./assets/img/w001.png", alt="Progect")
+                
+        .description-work
+            h2.title-h2 - Сайт завода Горизонт -
+            .tehnology html, css, javascript
+            .btn-open Посмотреть сай
+        
+        .slider-control
+            .slider-control__left
+                a(href="")
+                    img.slider-control__left-btn(src="./assets/img/wm001.jpg", alt="Progect")
+            .slider-control__right
+                a(href="")
+                    img.slider-control__right-btn(src="./assets/img/wm002.jpg", alt="Progect")
+                    
+        section.aboutMe
+            .title-work.white
+                .title-work__h
+                    h1.title-work__h1 - Что обо мне -
+                        br
+                        | говорят
+                
+                svg.title-work__background
+                    use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='assets/sprite/sprite.svg#about_header')
+            
+            section.review
+                article.references
+                    .references-text
+                        | Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                    .references-foto
+                        .foto-wrap
+                            img(src="assets/img/dima.jpg", alt="Ковальчук Дмитрий")
+                    .references-name
+                        | Ковальчук Дмитрий
+                        .references-duty
+                            | основатель Loftschool
+                article.references
+                    .references-text
+                        | Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                    .references-foto
+                        .foto-wrap
+                            img(src="assets/img/zar.jpg", alt="Зар Захаров")
+                    .references-name
+                        | Зар Захаров
+                        .references-duty
+                            | главный преподаватель
+
+
+                .form-contac
+                    form#contac(action='#')
+                        .form-contac__title - связаться со мной -
+                        input.form-contac__input(type='text', placeholder='Имя')
+                        input.form-contac__input(type='email', placeholder='Email')
+                        textarea.form-contac__text.clearfix(placeholder='Ваше сообщение')
+                        .form-contac__buttons
+                            input.form-contac__button.r(type='submit', value='Отправить')
+                            input.form-contac__button.l(type='reset', value='Очистить')
+                            
+            .totop
+                a.totop-a(href='#top') top
+                    svg.totop-up
+                        use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='./assets/sprite/sprite.svg#arrow_down')
+                                    
+            footer.footer
+                .footer__leftTop
+                    .footer-nav
+                        ul.footer-nav__list
+                            li.footer-nav__item 
+                                a(href="works.html") Мои работы
+                            li.footer-nav__item 
+                                a(href="about.html") Обо мне
+                            li.footer-nav__item 
+                                a(href="blog.html") Блог
+                            li.footer-nav__item 
+                                a(href="login.html") Авторизация
+                .footer__rightTop
+                    .socialDown
+                        ul.socialDown__list
+                            li.socialDown__item
                                 a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
-                                    svg.b-socialTop__item_1
-                                        use(xlink:href="./assets/sprite/sprite.svg#vk")
-                            li.b-socialTop__item
+                                    svg.socialDown__item_1
+                                        use(xlink:href="./assets/sprite/sprite.svg#vk_round")
+                            li.socialDown__item
                                 a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
-                                    svg.b-socialTop__item_2
-                                        use(xlink:href="./assets/sprite/sprite.svg#github")
-                            li.b-socialTop__item
+                                    svg.b-socialDown__item_2
+                                        use(xlink:href="./assets/sprite/sprite.svg#github_round")
+                            li.socialDown__item
                                 a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
-                                    svg.b-socialTop__item_3
-                                        use(xlink:href="./assets/sprite/sprite.svg#in")
+                                    svg.socialDown__item_3
+                                        use(xlink:href="./assets/sprite/sprite.svg#in_round")
+                .footer__leftBottom
+                    | Этот проект я делал для презентации себя.
+                .footer__rightBottom
+                    .footer-copyright
+                        .copyright &copy Varden Adamchuk | 2016
 
-            .l-header__rightTop
-                .l-header__rightTopWrap
-                    a.l-header__nav.l-header__nav_rotate(href="#main__block3" onclick="openNav()")
-
-            .l-header__bottom.clearfix
-
-                .l-header__fotoWrap
-                    .b-foto
-                        img.b-foto__size(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
-
-                .l-header__description
-                    .description__title Varden Adamchuk
-                    .description__text Личный сайт веб разработчика
-
-                .l-header__navDown.clearfix
-                    a(href="#l-main")
-                        .angle-down 
-
-
-                .l-header__traingle.clearfix
-                    svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
-                        polygon.traingle_1(points='0,0   0,86   500.8,86   500.8,75.5')
-                        polygon.traingle_2(points='1000,0   1000,86   500,86   500,75.5')
-
-        main.l-main#l-main
-            .clearfix
-                .l-main__title
-                    block title-top
-
-                .l-main__project
-                    .l-main__project-text
-                        block project-text
-                    .l-main__project-img
-                        block project-img
-                    .l-main__project-gallery
-                        block project-gallery
-
-                .l-main__about-me
-                    .l-main__title
-                        block title-Bottom
-
-                    .l-main__review
-                        block review
-                    .l-main__contact
-                        block contact
-
-                        a.to-top(href='#top') to top
-                            svg.up
-                                use(xmlns:xlink='http://www.w3.org/1999/xlink', xlink:href='./assets/sprite/sprite.svg#arrow_down')
-
-        footer.l-footer
-            //- block footer-leftTop
-            .l-footer__leftTop
-                .footer-nav
-                    ul.footer-nav__list
-                        li.footer-nav__item 
-                            a(href="works.html") Мои работы
-                        li.footer-nav__item 
-                            a(href="about.html") Обо мне
-                        li.footer-nav__item 
-                            a(href="blog.html") Блог
-                        li.footer-nav__item 
-                            a(href="login.html") Авторизация
-            .l-footer__rightTop
-                //- block footer-rightTop
-                .b-socialDown
-                    ul.b-socialDown__list
-                        li.b-socialDown__item
-                            a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
-                                svg.b-socialDown__item_1
-                                    use(xlink:href="./assets/sprite/sprite.svg#vk_round")
-                        li.b-socialDown__item
-                            a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
-                                svg.b-socialDown__item_2
-                                    use(xlink:href="./assets/sprite/sprite.svg#github_round")
-                        li.b-socialDown__item
-                            a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
-                                svg.b-socialDown__item_3
-                                    use(xlink:href="./assets/sprite/sprite.svg#in_round")
-            .l-footer__leftBottom
-                //- block footer-leftBottom
-                | Этот проект я делал для презентации себя.
-            .l-footer__rightBottom
-                //- block footer-rightBottom
-                .footer-copyright
-                    .copyright &copy Varden Adamchuk | 2016
-
-    #myNav.overlay
-        a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
-        .overlay-content
-            a(href='work.html') Мои работы
-            a(href='about.html') Обо мне
-            a(href='blog.html') Блог
-            a(href='index.html') Авторизация
+#myNav.overlay
+    a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+    .overlay-content
+        a(href='work.html') Мои работы
+        a(href='about.html') Обо мне
+        a(href='blog.html') Блог
+        a(href='index.html') Авторизация

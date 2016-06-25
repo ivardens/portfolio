@@ -1,14 +1,13 @@
 extends common/_layout_about
 
 block titleL
-    .title-h1
+    .main-about__title-h
         h1 - Обо мне -
                     
 block fotoL
-    .about-foto
-        //- img(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
+    img(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
 block textL
-    .title-h2
+    .main-about__title-h
         h2 - Кто я -
     .description
         |Я веб разработчик из Ванкувера. Мне 43 года.
@@ -23,7 +22,7 @@ block textL
         br
 
 block textR
-    .title-h2
+    .main-about__title-h
         h2 - Чем я могу быть -
             br 
             |вам полезен 
@@ -32,12 +31,13 @@ block textR
 
 block skillsR
     h2 Frontend
+        
     h2 Becend
     h3 Workflow
 
 block contact
     .popup-contact
-        .title-h2 
+        .main-about__title-h
             h2 - Контакты -
         ul.popup-contact__list
             li.popup-contact__items.skype varden-adams

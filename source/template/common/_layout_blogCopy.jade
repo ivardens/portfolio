@@ -1,0 +1,99 @@
+include _head
+
+
+.l-wrap
+    header.l-header.clearfix
+        .l-header__leftTop
+            .l-header__leftTopWrap
+                .b-socialTop 
+                    ul.b-socialTop__list
+                        li.b-socialTop__item
+                            a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
+                                svg.b-socialTop__item_1
+                                    use(xlink:href="./assets/sprite/sprite.svg#vk")
+                        li.b-socialTop__item
+                            a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
+                                svg.b-socialTop__item_2
+                                    use(xlink:href="./assets/sprite/sprite.svg#github")
+                        li.b-socialTop__item
+                            a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
+                                svg.b-socialTop__item_3
+                                    use(xlink:href="./assets/sprite/sprite.svg#in")
+
+        .l-header__rightTop
+            .l-header__rightTopWrap
+                a.l-header__nav.l-header__nav_rotate(href="#main__block3" onclick="openNav()")
+
+        .l-header__bottom.clearfix
+        
+            .l-header__fotoWrap
+                .b-foto
+                    img.b-foto__size(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
+
+            .l-header__description
+                .blog.title-h1 - Блог -
+                .blog.description__text Статьи, которые я написал
+
+            .l-header__navDown.clearfix
+                a(href="#l-main")
+                    .angle-down
+
+            .l-header__traingle.clearfix
+                svg.traingle(xmlns='http://www.w3.org/2000/svg', viewbox='0 0 1000 85', preserveaspectratio='none')
+                    polygon.blog.traingle_1(points='0,0   0,86   500.8,86   500.8,75.5')
+                    polygon.blog.traingle_2(points='1000,0   1000,86   500,86   500,75.5')
+
+    main.blog.l-main#l-main
+        .clearfix
+            .blog.l-main__left
+                block main-left
+                    
+
+            .blog.l-main__right
+                block main-right
+
+
+    footer.l-footer
+        //- block footer-leftTop
+        .l-footer__leftTop
+            .footer-nav
+                ul.footer-nav__list
+                    li.footer-nav__item 
+                        a(href="works.html") Мои работы
+                    li.footer-nav__item 
+                        a(href="about.html") Обо мне
+                    li.footer-nav__item 
+                        a(href="blog.html") Блог
+                    li.footer-nav__item 
+                        a(href="login.html") Авторизация
+        .l-footer__rightTop
+            //- block footer-rightTop
+            .b-socialDown
+                ul.b-socialDown__list
+                    li.b-socialDown__item
+                        a(href="https://vk.com/varden.adams" target="_blank" title="My VK")
+                            svg.b-socialDown__item_1
+                                use(xlink:href="./assets/sprite/sprite.svg#vk_round")
+                    li.b-socialDown__item
+                        a(href="https://github.com/ivarden" target="_blank" title="My GitHub")
+                            svg.b-socialDown__item_2
+                                use(xlink:href="./assets/sprite/sprite.svg#github_round")
+                    li.b-socialDown__item
+                        a(href="https://www.linkedin.com/in/ivarden" target="_blank" title="My Linkedin")
+                            svg.b-socialDown__item_3
+                                use(xlink:href="./assets/sprite/sprite.svg#in_round")
+        .l-footer__leftBottom
+            //- block footer-leftBottom
+            | Этот проект я делал для презентации себя.
+        .l-footer__rightBottom
+            //- block footer-rightBottom
+            .footer-copyright
+                .copyright &copy Varden Adamchuk | 2016
+
+#myNav.overlay
+    a.closebtn(href='javascript:void(0)', onclick='closeNav()') ×
+    .overlay-content
+        a(href='work.html') Мои работы
+        a(href='about.html') Обо мне
+        a(href='blog.html') Блог
+        a(href='index.html') Авторизация
