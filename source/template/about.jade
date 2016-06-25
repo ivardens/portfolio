@@ -3,7 +3,7 @@ extends common/_layout_about
 block titleL
     .main-about__title-h
         h1 - Обо мне -
-                    
+
 block fotoL
     img(src="./assets/img/me.jpg" alt="Foto of Varden Adamchuk")
 block textL
@@ -31,9 +31,75 @@ block textR
 
 block skillsR
     h2 Frontend
-        
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='190 251.2')
+        .inner-text HTML5 JADE vs Pug
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='180 251.2')
+        .inner-text CSS3 SCSS
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='140 251.2')
+        .inner-text JavaScript
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='140 251.2')
+        .inner-text jQuery
+
     h2 Becend
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='60 251.2')
+        .inner-text Node.js & npm
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='18 251.2')
+        .inner-text Mongo.db
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='14 251.2')
+        .inner-text PHP
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='40 251.2')
+        .inner-text mySQL
     h3 Workflow
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='60 251.2')
+        .inner-text GitHub
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='18 251.2')
+        .inner-text Gulp
+    .diagram
+        svg.skill-svg(viewbox='0 0 100 100', preserveaspectratio='xMinYMin slice')
+            g.skill-svg__skill-circle
+                circle.skill-circle--back(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='251.2 251.2')
+                circle.skill-circle(r='40', cx='50%', cy='50%', fill='none', stroke-dasharray='14 251.2')
+        .inner-text Bower
 
 block contact
     .popup-contact
