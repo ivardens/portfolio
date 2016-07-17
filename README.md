@@ -17,4 +17,4 @@ git remote add origin https://github.com/ivarden/portfolio.git
 git push -u origin master 
 ```
 
-Testing Version http://adams-notes.com/
+Version for testing : http://adams-notes.com/
