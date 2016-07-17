@@ -16,3 +16,5 @@ git commit -m "first commit"
 git remote add origin https://github.com/ivarden/portfolio.git 
 git push -u origin master 
 ```
+
+Testing Version http://adams-notes.com/
